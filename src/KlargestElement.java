@@ -3,7 +3,7 @@ import java.util.*;
 public class KlargestElement {
     public static void main(String[] args) {
         int [] nums = {3, 2,1, 6, 5, 4};
-        int k = 3; 
+        int k = 2; 
         System.out.println(findKthLargest(nums, k));
     }
     public static int findKthLargest(int[] nums, int k) {
@@ -16,7 +16,7 @@ public class KlargestElement {
             maxHeap.add(ele);
         }
 
-        for(int i = 0; i < k-1; i++)
+        for(int i = 0; i < k - 1; i++)
         {
             maxHeap.poll();
         }
